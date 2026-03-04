@@ -17,8 +17,9 @@ func CreateUser(ctx *gin.Context) {
 
 		ctx.JSON(restErr.Code, restErr)
 		return
+
 	}
 
-	fmt.Println(userRequest)
+	ctx.JSON(200, userRequest)
 
 }
